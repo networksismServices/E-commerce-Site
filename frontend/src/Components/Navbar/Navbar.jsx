@@ -4,6 +4,7 @@ import {useState} from 'react';
 
 import logo from "../Assets/logo.png"
 import cart_icon from '../Assets/cart_icon.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [highlight,setHighlight]=useState('')
@@ -21,18 +22,20 @@ const Navbar = () => {
     onMouseOver={() => setHighlight('shop')}  
     onMouseOut={() => setHighlight('')}
   >
-    Shop
+  <Link style={{textDecoration:'none'}} to='/'>Shop</Link>
     <hr className={highlight === 'shop' ? 'visible' : 'hidden'} />
   </li>
-        <li onMouseOver={()=>setHighlight('men')}  onMouseOut={()=>setHighlight('')}>Men <hr className={highlight === 'men' ? 'visible' : 'hidden'} /></li>
-        <li onMouseOver={()=>setHighlight('women')}  onMouseOut={()=>setHighlight('')}>Women <hr className={highlight === 'women' ? 'visible' : 'hidden'} /></li>
-        <li onMouseOver={()=>setHighlight('kids')} onMouseOut={()=>setHighlight('')}>Kids <hr className={highlight === 'kids' ? 'visible' : 'hidden'} /></li>
+        <li onMouseOver={()=>setHighlight('men')}  onMouseOut={()=>setHighlight('')}><Link style={{textDecoration:'none'}} to="/men" >Men</Link> <hr className={highlight === 'men' ? 'visible' : 'hidden'} /></li>
+        <li onMouseOver={()=>setHighlight('women')}  onMouseOut={()=>setHighlight('')}><Link style={{textDecoration:'none'}} to="/women">Women</Link> <hr className={highlight === 'women' ? 'visible' : 'hidden'} /></li>
+        <li onMouseOver={()=>setHighlight('kids')} onMouseOut={()=>setHighlight('')}><Link style={{textDecoration:'none'}}  to="/kids">Kids</Link><hr className={highlight === 'kids' ? 'visible' : 'hidden'} /></li>
 
  
         </ul>
         <div className="nav-login-cart">
-          <button>Login</button>
+          <Link to="login" ><button>Login</button></Link>
+          <Link to="cart">
           <img src={cart_icon} alt=""/>
+          </Link>
         <div className="nav-cart-count">0</div>
         </div>
         
