@@ -1,15 +1,15 @@
 import React from "react";
-import "./NewCollections.css";
-import new_collection from "../Assets/new_collections";
+import "./RelatedProducts.css";
+import data_product from "../Assets/data";
 import Item from "../Item/Item";
 
-const NewCollections = () => {
+const RelatedProducts = () => {
   return (
-    <div className="new-collections">
-      <h1>NEW COLLECTIONS</h1>
+    <div className="relatedproducts">
+      <h1>Related Products</h1>
       <hr />
-      <div className="collections">
-        {new_collection.map((item, i) => {
+      <div className="relatedproducts-item">
+        {data_product.map((item, i) => {
           return (
             <Item
               key={i}
@@ -26,4 +26,4 @@ const NewCollections = () => {
   );
 };
 
-export default NewCollections;
+export default RelatedProducts;
