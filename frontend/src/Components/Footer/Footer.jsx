@@ -23,14 +23,13 @@ const Footer = () => {
         <div className="footer-icons-containers">
           <img src={instagram_icon} alt="" />
         </div>
-      
+
         <div className="footer-icons-containers">
           <img src={pinterest_icon} alt="" />
         </div>
         <div className="footer-icons-containers">
           <img src={whatsapp_icon} alt="" />
         </div>
-       
       </div>
       <div className="footer-copyright">
         <hr />
