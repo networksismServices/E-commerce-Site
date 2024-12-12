@@ -144,6 +144,7 @@
 
 @media (max-width: 800px) {
   .navbar {
+    background-color:#171717;
     padding: 10px 0;
   }
   .nav-dropdown {

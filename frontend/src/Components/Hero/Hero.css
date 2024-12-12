@@ -116,6 +116,7 @@
 
 @media (max-width: 800px) {
   .hero-left {
+    /* background: black; */
     padding-left: 30px;
   }
 
