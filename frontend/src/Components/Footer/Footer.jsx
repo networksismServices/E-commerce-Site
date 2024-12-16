@@ -13,27 +13,26 @@ const Footer = () => {
         <p>SHOPPER</p>
       </div>
       <ul className="footer-links">
-        <li>Compnay</li>
+        <li>Company</li>
         <li>Products</li>
         <li>Offices</li>
         <li>About</li>
         <li>Contact</li>
       </ul>
-      <div className="footer-socials-icon">
-        <div className="footer-icons-containers">
+      <div className="footer-social-icon">
+        <div className="footer-icons-container">
           <img src={instagram_icon} alt="" />
         </div>
-
-        <div className="footer-icons-containers">
+        <div className="footer-icons-container">
           <img src={pinterest_icon} alt="" />
         </div>
-        <div className="footer-icons-containers">
+        <div className="footer-icons-container">
           <img src={whatsapp_icon} alt="" />
         </div>
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>Copyright@ 2024 -All rights reserver</p>
+        <p>Copyright @ 2025 - All Rights Reserved</p>
       </div>
     </div>
   );
