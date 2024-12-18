@@ -31,7 +31,10 @@
   gap: 20px;
 }
 .hero-hand-icon img {
+  width:105px;
+
   height: 105px;
+
 }
 
 .hero-latest-button {
